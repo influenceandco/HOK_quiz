@@ -129,6 +129,33 @@ button.main_button:hover, button.main_button:active, button.main_button:focus{
 	background: #16803b;
 }
 
+#particles-js{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	pointer-events: none;
+	z-index: 0;
+}
+
+#quiz_container{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background: rgba(255, 255, 255, 0.5);
+	z-index: 1;
+}
+#quiz_inner{
+	position: relative;
+	overflow: scroll;
+	
+}
+
 /*********** RESPONSIVE **********/
 
 
@@ -144,6 +171,12 @@ button.main_button:hover, button.main_button:active, button.main_button:focus{
 @media (max-width: 767px) {
 	html, body{
 		font-size: 13px;
+	}
+	#particles-js{
+		display: none;
+	}
+	#quiz_inner{
+		padding: 20px;
 	}
 
 }
