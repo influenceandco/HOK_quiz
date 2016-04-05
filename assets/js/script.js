@@ -115,3 +115,82 @@ $(document).ready(function(){
 	
 	);
 });
+
+
+
+
+var quiz_array = Array();
+
+$("#start_quiz_form").validate({
+
+    rules: {
+	    name:{
+		    required:true
+	    },
+	    email:{
+		    required:true,
+		    email:true
+	    }
+    },
+	success: function(label, element){
+		$(element).removeClass("form_error").siblings(".validation").show().removeClass("error").html("<i class='fa fa-check'></i>");
+		
+	},   
+	highlight: function(element, errorClass) {
+	    $(element).addClass("form_error");	
+		$(element).siblings(".validation").show().addClass("error").html("<i class='fa fa-exclamation-triangle'></i>");
+	},
+    submitHandler: function (form) {
+	    
+        $("#start_quiz_form_error").html("Loading <i class='fa fa-spinner fa-spin'></i>");
+		
+		var full_name = $("#start_quiz_name").val();
+ 		var email = $("#start_quiz_email").val();
+   
+        var data = {
+	        full_name: full_name,
+	        email: email
+        }; 
+        
+        quiz_array["name"] = full_name;
+        quiz_array["email"] = email;
+        
+        ///send email and name somewhere.....
+        
+         
+    
+        
+        ///send email and name somewhere.....
+        
+        $("#start_page").fadeOut(500, function(){
+	        $("#start_page").hide();
+	        $("#quiz_page").fadeIn(500, function(){
+		        $("#quiz_page").show();
+	        });
+        });
+       
+        
+        
+        
+		/*
+        $.ajax({
+            type: "POST",
+            url: "custom_script.php",
+            data: data,
+            success: function (res) {
+				
+				try
+				{
+				 	
+				}
+				catch(e)
+				{
+                 $("#start_quiz_form_error").html(e);
+				} 
+            }
+        });
+        */
+    }
+});
+
+

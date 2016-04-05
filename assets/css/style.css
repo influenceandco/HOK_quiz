@@ -78,18 +78,18 @@ footer{
 .text_wrapper{
 	margin-bottom: 30px;
 }
-
+.form_container{
+	margin-bottom: 30px;
+}
 input.main_input{
 	width: 90%;
 	margin: 0px;
-	margin-bottom: 40px;
 	
 	background: transparent;
 	border: none;
 	border-bottom: 1px solid #454747;
 	border-radius: 0px;
 	box-shadow: none;
-	text-transform: uppercase;
 	padding: 5px 5%;
 	
 }
@@ -101,17 +101,21 @@ input.main_input:focus{
 }
 input.main_input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #454747;
+	text-transform: uppercase;
 }
 input.main_input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #454747;
    opacity:  1;
+	text-transform: uppercase;
 }
 input.main_input::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #454747;
    opacity:  1;
+	text-transform: uppercase;
 }
 input.main_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #454747;
+	text-transform: uppercase;
 }
 
 button.main_button{
@@ -156,6 +160,23 @@ button.main_button:hover, button.main_button:active, button.main_button:focus{
 	
 }
 
+.logo_nav{
+	max-width: 300px;
+	width: 50%;
+	margin-top: 5%;
+}
+
+.logo_nav img{
+	width: 100%;
+}
+label.error{
+	opacity: 0.7;
+	padding: 2.5px 0px;
+}
+.form_error{
+	padding: 25px 0px;
+	text-align: center;
+}
 /*********** RESPONSIVE **********/
 
 
