@@ -331,7 +331,8 @@ var quiz_array = {
 		
 	]
 }
-console.log(quiz_array);
+
+question_number = 0;
 
 $("#start_quiz_form").validate({
 
@@ -386,6 +387,9 @@ $("#start_quiz_form").validate({
             }
         });
         */
+                
+        clearQuestions();
+        nextQuestion();
          
     
         
@@ -401,3 +405,42 @@ $("#start_quiz_form").validate({
 });
 
 
+function clearQuestions(){
+	$("#question_area").empty();
+	$("#question_header").empty();
+	$("#question_subheader").empty();
+}
+
+function nextQuestion(){
+	
+	question_number++;
+	var question; 
+	var questions = quiz_array.questions;
+	
+	if(question_number <= questions.length){
+		
+		for(var i = 0; i< questions.length; i++){
+			if(questions[i].id == question_number){
+				question = questions[i];
+			}
+		}
+		
+		$("#question_header").html(question.header);
+		$("#question_subheader").html(question.subheader);
+		
+		for(var i = 0; i< question.choices.length; i++){
+			questionHTML(question.choices[i]);
+		}
+
+	}else{
+		
+		//finish quiz
+		
+	}
+}
+
+function questionHTML(data){
+	var html = "";
+	
+	$("#question_area").append(html);
+}
