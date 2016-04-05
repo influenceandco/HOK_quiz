@@ -126,6 +126,32 @@ var quiz_array = {
 	total_possible: 0,
 	results: 0,
 	percent: 0,
+	result_options:[
+		{
+			min: 0,
+			max:49,
+			color_class: "red",
+			title: "Very Bad!",
+			description: "",
+			image: ""
+		},
+		{
+			min: 50,
+			max:74,
+			color_class: "yellow",
+			title: "You&rsquo;re ok...",
+			description: "",
+			image: ""
+		},
+		{
+			min: 75,
+			max:100,
+			color_class: "green",
+			title: "Lookin&rsquo; pretty good!",
+			description: "",
+			image: ""
+		}		
+	],
 	questions: [
 		{
 			id: 1,
@@ -134,6 +160,32 @@ var quiz_array = {
 			total_possible: 0,
 			results: 0,
 			percent: 0,
+			result_options:[
+				{
+					min: 0,
+					max:49,
+					color_class: "red",
+					title: "Existing Performance",
+					description: "",
+					image: ""
+				},
+				{
+					min: 50,
+					max:74,
+					color_class: "yellow",
+					title: "Existing Performance",
+					description: "",
+					image: ""
+				},
+				{
+					min: 75,
+					max:100,
+					color_class: "green",
+					title: "Existing Performance",
+					description: "",
+					image: ""
+				}		
+			],
 			choices: [
 				{
 					id: 1,
@@ -174,6 +226,32 @@ var quiz_array = {
 			total_possible: 0,
 			results: 0,
 			percent: 0,
+			result_options:[
+				{
+					min: 0,
+					max:49,
+					color_class: "red",
+					title: "Social / Content Marketing",
+					description: "",
+					image: ""
+				},
+				{
+					min: 50,
+					max:74,
+					color_class: "yellow",
+					title: "Social / Content Marketing",
+					description: "",
+					image: ""
+				},
+				{
+					min: 75,
+					max:100,
+					color_class: "green",
+					title: "Social / Content Marketing",
+					description: "",
+					image: ""
+				}		
+			],
 			choices: [
 				{
 					id: 1,
@@ -209,6 +287,32 @@ var quiz_array = {
 			total_possible: 0,
 			results: 0,
 			percent: 0,
+			result_options:[
+				{
+					min: 0,
+					max:49,
+					color_class: "red",
+					title: "Programmatic Display",
+					description: "",
+					image: ""
+				},
+				{
+					min: 50,
+					max:74,
+					color_class: "yellow",
+					title: "Programmatic Display",
+					description: "",
+					image: ""
+				},
+				{
+					min: 75,
+					max:100,
+					color_class: "green",
+					title: "Programmatic Display",
+					description: "",
+					image: ""
+				}		
+			],
 			choices: [
 				{
 					id: 1,
@@ -239,6 +343,32 @@ var quiz_array = {
 			total_possible: 0,
 			results: 0,
 			percent: 0,
+			result_options:[
+				{
+					min: 0,
+					max:49,
+					color_class: "red",
+					title: "Paid Social Program",
+					description: "",
+					image: ""
+				},
+				{
+					min: 50,
+					max:74,
+					color_class: "yellow",
+					title: "Paid Social Program",
+					description: "",
+					image: ""
+				},
+				{
+					min: 75,
+					max:100,
+					color_class: "green",
+					title: "Paid Social Program",
+					description: "",
+					image: ""
+				}		
+			],
 			choices: [
 				{
 					id: 1,
@@ -269,6 +399,32 @@ var quiz_array = {
 			total_possible: 0,
 			results: 0,
 			percent: 0,
+			result_options:[
+				{
+					min: 0,
+					max:49,
+					color_class: "red",
+					title: "Remarketing",
+					description: "",
+					image: ""
+				},
+				{
+					min: 50,
+					max:74,
+					color_class: "yellow",
+					title: "Remarketing",
+					description: "",
+					image: ""
+				},
+				{
+					min: 75,
+					max:100,
+					color_class: "green",
+					title: "Remarketing",
+					description: "",
+					image: ""
+				}		
+			],
 			choices: [
 				{
 					id: 1,
@@ -299,6 +455,32 @@ var quiz_array = {
 			total_possible: 0,
 			results: 0,
 			percent: 0,
+			result_options:[
+				{
+					min: 0,
+					max:49,
+					color_class: "red",
+					title: "Affiliate Marketing Program",
+					description: "",
+					image: ""
+				},
+				{
+					min: 50,
+					max:74,
+					color_class: "yellow",
+					title: "Affiliate Marketing Program",
+					description: "",
+					image: ""
+				},
+				{
+					min: 75,
+					max:100,
+					color_class: "green",
+					title: "Affiliate Marketing Program",
+					description: "",
+					image: ""
+				}		
+			],
 			choices: [
 				{
 					id: 1,
@@ -324,6 +506,32 @@ var quiz_array = {
 			total_possible: 0,
 			results: 0,
 			percent: 0,
+			result_options:[
+				{
+					min: 0,
+					max:49,
+					color_class: "red",
+					title: "Paid Search Program",
+					description: "",
+					image: ""
+				},
+				{
+					min: 50,
+					max:74,
+					color_class: "yellow",
+					title: "Paid Search Program",
+					description: "",
+					image: ""
+				},
+				{
+					min: 75,
+					max:100,
+					color_class: "green",
+					title: "Paid Search Program",
+					description: "",
+					image: ""
+				}		
+			],
 			choices: [
 				{
 					id: 1,
