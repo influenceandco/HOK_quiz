@@ -28,7 +28,7 @@
 html, body{
 	height: 100%;
     font-family: 'proxima_nova_rgregular';
-	color: #66686a;
+	color: #454747;
 	font-weight: 300;
 }
 
@@ -48,8 +48,68 @@ footer{
 	text-align: center
 }
 
-.p {
-    margin-top: 3cm;
+.logo_main{
+	margin: 10% auto 50px;
+}
+.logo_main img{
+	max-width: 500px;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+.text_wrapper{
+	margin-bottom: 30px;
+}
+
+input.main_input{
+	width: 90%;
+	margin: 0px;
+	margin-bottom: 40px;
+	
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #454747;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: uppercase;
+	padding: 5px 5%;
+	
+}
+input.main_input:focus{
+	outline: none;
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid #454747
+}
+input.main_input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #454747;
+}
+input.main_input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #454747;
+   opacity:  1;
+}
+input.main_input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #454747;
+   opacity:  1;
+}
+input.main_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #454747;
+}
+
+button.main_button{
+	padding: 12.5px 30px;
+	text-transform: uppercase;
+	color: white;
+	background: #1a9645;
+	border-radius: 0px;
+	box-shadow: none;
+	text-shadow: none;
+	border: none;
+	outline: none !important;
+}
+button.main_button:hover, button.main_button:active, button.main_button:focus{
+	background: #16803b;
 }
 
 /*********** RESPONSIVE **********/
