@@ -181,7 +181,10 @@ label.error{
 	padding: 25px 0px;
 	text-align: center;
 }
-
+.quiz_error{
+	padding: 10px 0px;
+	text-align: center;
+}
 #question_wrapper{
 	margin-top: 5%;
 }
@@ -238,7 +241,7 @@ a.question_choice_item{
 	
 }
 a.question_choice_item .question_choice_item_inner{
-	padding: 10px;
+	padding: 10px 0px;
 }
 a.question_choice_item:hover,
 a.question_choice_item:active,
@@ -266,7 +269,7 @@ a.question_choice_item.selected{
 	text-align: center;
 }
 #buttons_area a{
-	padding: 10px 60px;
+	padding: 10px 40px;
 	text-transform: uppercase;
 	color: #1a9645;
 	background: transparent;
@@ -297,7 +300,15 @@ a.question_choice_item.selected{
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-	
+	#buttons_area{
+		padding: 0px;
+	}
+	#buttons_area a{
+		display: block;
+		width: 100%;
+		margin: 20px 0px;
+		padding: 10px 0px;
+	}
 
 }
 
@@ -315,6 +326,15 @@ a.question_choice_item.selected{
 		flex-basis: 45%;
 		-webkit-flex-basis: 45%;
 		margin: 30px 2.5%
+	}
+	#buttons_area{
+		padding: 0px;
+	}
+	#buttons_area a{
+		display: block;
+		width: 100%;
+		margin: 20px 0px;
+		padding: 10px 0px;
 	}
 
 }

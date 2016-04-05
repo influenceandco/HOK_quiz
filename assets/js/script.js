@@ -123,11 +123,17 @@ var quiz_array = {
 	name: "",
 	email: "",
 	completed_quiz: false,
+	total_possible: 0,
+	results: 0,
+	percent: 0,
 	questions: [
 		{
 			id: 1,
 			header: "Overall, my existing performance marketing program:",
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
+			total_possible: 0,
+			results: 0,
+			percent: 0,
 			choices: [
 				{
 					id: 1,
@@ -165,6 +171,9 @@ var quiz_array = {
 			id: 2,
 			header: "My social / content marketing is:",
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
+			total_possible: 0,
+			results: 0,
+			percent: 0,
 			choices: [
 				{
 					id: 1,
@@ -197,6 +206,9 @@ var quiz_array = {
 			id: 3,
 			header: "My programmatic display is:",
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
+			total_possible: 0,
+			results: 0,
+			percent: 0,
 			choices: [
 				{
 					id: 1,
@@ -224,6 +236,9 @@ var quiz_array = {
 			id: 4,
 			header: "My paid social program:",
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
+			total_possible: 0,
+			results: 0,
+			percent: 0,
 			choices: [
 				{
 					id: 1,
@@ -251,6 +266,9 @@ var quiz_array = {
 			id: 5,
 			header: "My remarketing:",
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
+			total_possible: 0,
+			results: 0,
+			percent: 0,
 			choices: [
 				{
 					id: 1,
@@ -278,6 +296,9 @@ var quiz_array = {
 			id: 6,
 			header: "My affiliate marketing program has:",
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
+			total_possible: 0,
+			results: 0,
+			percent: 0,
 			choices: [
 				{
 					id: 1,
@@ -300,6 +321,9 @@ var quiz_array = {
 			id: 7,
 			header: "My paid search program:",
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
+			total_possible: 0,
+			results: 0,
+			percent: 0,
 			choices: [
 				{
 					id: 1,
@@ -446,6 +470,42 @@ function nextQuestion(){
 
 	}else{
 		//finish quiz
+		finishQuiz();
+		
+	}
+}
+
+
+function previousQuestion(){
+	
+	question_number--;
+
+	var question; 
+	var questions = quiz_array.questions;
+	for(var i = 0; i< questions.length; i++){
+		if(questions[i].id == question_number){
+			question = questions[i];
+		}
+	}
+	if(question_number > 0){
+		
+		for(var i = 0; i< questions.length; i++){
+			if(questions[i].id == question_number){
+				question = questions[i];
+			}
+		}
+		
+		$("#question_header").html(question.header);
+		$("#question_subheader").html(question.subheader);
+		
+		for(var i = 0; i< question.choices.length; i++){
+			questionHTML(question.choices[i], question_number);
+		}
+		
+		activateQuestion();
+		getBottomButtons();
+		
+
 	}
 }
 
@@ -470,11 +530,72 @@ function getBottomButtons(){
 		break;
 		
 		case quiz_array.questions.length:
-			var html = "<a href='#' class='previous_button'>Previous</a> <a href='#' class='skip_button'>Skip</a> <a href='#' class='finish_button'>Finish</a>";
+			var html = "<a href='#' class='previous_button'>Previous</a> <a href='#' class='skip_button'>Skip</a> <a href='#' class='next_button'>Finish</a>";
 		break;
 	}
 	
 	$("#buttons_area").html(html);
+	$("#quiz_error").empty();
+	
+	
+	activateButtons()
+	
+	
+}
+
+function activateButtons(){
+	
+	$(".skip_button").unbind("click");
+	$(".skip_button").click(function(e){
+		e.preventDefault();
+		
+		$("#quiz_page").fadeOut(500, function(){
+	        clearQuestions();
+	        nextQuestion();
+	        $("#quiz_page").fadeIn(500)
+        });
+		
+	});
+	
+	
+	$(".next_button").unbind("click");
+	$(".next_button").click(function(e){
+		e.preventDefault();
+		
+		var found = false;
+		
+		$(".question_item").each(function(){
+			if($(this).attr("data-result") == 0){
+				found = true;
+			}
+		});
+		
+		if(found != true){
+			$("#quiz_page").fadeOut(500, function(){
+		        clearQuestions();
+		        nextQuestion();
+		        $("#quiz_page").fadeIn(500)
+	        });
+		}else{
+			$("#quiz_error").html("Please rate each item to continue.");
+		}
+		
+		
+	});
+	
+	$(".previous_button").unbind("click");
+	$(".previous_button").click(function(e){
+		e.preventDefault();
+		
+		$("#quiz_page").fadeOut(500, function(){
+	        clearQuestions();
+	        previousQuestion();
+	        $("#quiz_page").fadeIn(500)
+        });
+		
+	});
+	
+	
 	
 	
 }
@@ -546,10 +667,55 @@ function activateQuestion(){
 
 			}
 		}
-		
-		console.log(quiz_array)
 		$(button).addClass("selected");
 		
 	});
 
+}
+
+
+function finishQuiz(){
+	$("#quiz_page").remove();
+	
+	$("#results_page").fadeIn(500, function(){
+        $("#results_page").show();
+    });
+    
+    getResults();
+}
+
+function getResults(){
+	
+	quiz_array.completed_quiz = true;
+	
+	var overall_possible = 0;
+	var overall_results = 0;
+	
+	for(var i = 0; i<quiz_array.questions.length; i++){
+		
+		
+		var total_possible = 0;
+		var results = 0;
+		
+		for(var j = 0; j<quiz_array.questions[i].choices.length; j++){
+			total_possible = total_possible + 5;
+			overall_possible = overall_possible +5;
+			results = results + parseInt(quiz_array.questions[i].choices[j].result);
+			overall_results = overall_results + parseInt(quiz_array.questions[i].choices[j].result);
+		}
+		
+		var percent = (results/total_possible)*100;
+		quiz_array.questions[i].total_possible = total_possible;
+		quiz_array.questions[i].results = results;
+		quiz_array.questions[i].percent = percent;
+
+	}
+	
+	overall_percent = (overall_results/overall_possible)*100;
+	quiz_array.total_possible = overall_possible;
+	quiz_array.results = overall_results;
+	quiz_array.percent = overall_percent;
+	
+	console.log(overall_percent);
+	console.log(quiz_array);
 }
