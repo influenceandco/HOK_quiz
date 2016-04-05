@@ -34,15 +34,19 @@ html, body{
 }
 h1{
 	font-size: 2.25em;
+    font-family: 'proxima_nova_ltsemibold';
 }
 h2{
 	font-size: 1.8em;
+    font-family: 'proxima_nova_ltsemibold';
 }
 h3{
 	font-size: 1.5em;
+    font-family: 'proxima_nova_ltsemibold';
 }
 h4{
 	font-size: 1.2em;
+    font-family: 'proxima_nova_ltsemibold';
 }
 p{
 	1em;
@@ -177,6 +181,114 @@ label.error{
 	padding: 25px 0px;
 	text-align: center;
 }
+
+#question_wrapper{
+	margin-top: 5%;
+}
+
+#question_area{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
+	align-items:flex-start;
+	-webkit-align-items:flex-start;
+	justify-content:center;
+	-webkit-justify-content:center;
+	flex-flow:row wrap;
+	-webkit-flex-flow:row wrap;
+}
+
+.question_item{
+	flex-basis: 25%;
+	-webkit-flex-basis: 25%;
+	margin: 30px 3.666%
+}
+.question_header{
+	background: #1a9645;
+	color: white;
+	text-align: center;
+}
+.question_header_inner{
+	padding: 20px;
+}
+.question_choices{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:space-around;
+	-webkit-justify-content:space-around;
+	flex-flow:row wrap;
+	-webkit-flex-flow:row wrap;
+}
+a.question_choice_item{
+	display: block;
+	background: #addbbd;
+	color: white;
+	font-size: 1.25em;
+	flex-basis: 20%;
+	-webkit-flex-basis:  20%;
+	text-align: center;
+	text-decoration: none !important;
+	
+}
+a.question_choice_item .question_choice_item_inner{
+	padding: 10px;
+}
+a.question_choice_item:hover,
+a.question_choice_item:active,
+a.question_choice_item:focus{
+	background: #a3d3b3;
+}
+a.question_choice_item.selected{
+	background: #99caaa;
+}
+
+#quiz_progress_bar.progress{
+	border: 2px solid #1a9645;
+	background: transparent;
+	box-shadow: none;
+	height: 10px;
+	margin-bottom: 30px;
+}
+#quiz_progress_bar.progress .bar{
+	background: #1a9645;
+	border: none;
+}
+
+#buttons_area{
+	padding: 30px 0px;
+	text-align: center;
+}
+#buttons_area a{
+	padding: 10px 60px;
+	text-transform: uppercase;
+	color: #1a9645;
+	background: transparent;
+	border-radius: 0px;
+	box-shadow: none;
+	text-shadow: none;
+	border: 2px solid #1a9645;
+	outline: none !important;
+	margin: 0px 5px;
+	text-decoration: none !important;
+}
+#buttons_area a:hover, #buttons_area a:active, #buttons_area a:focus{
+	background: #1a9645;
+	color: white;
+}
+
+#progress_text_area{
+	font-size: 0.85em;
+	padding: 5px 0px;
+	text-align: center;
+}
+
 /*********** RESPONSIVE **********/
 
 
@@ -198,6 +310,11 @@ label.error{
 	}
 	#quiz_inner{
 		padding: 20px;
+	}
+	.question_item{
+		flex-basis: 45%;
+		-webkit-flex-basis: 45%;
+		margin: 30px 2.5%
 	}
 
 }

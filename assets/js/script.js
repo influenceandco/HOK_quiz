@@ -132,32 +132,32 @@ var quiz_array = {
 				{
 					id: 1,
 					question: "Focuses strictly on KPIs as the definition of success",
-					result: 1
+					result: 0
 				},
 				{
 					id: 2,
 					question: "Clearly defines budget requirements and sources",
-					result: 1
+					result: 0
 				},
 				{
 					id: 3,
 					question: "Prioritizes mobile based on scale, quality, and efficiency opportunity of mobile-acquired users",
-					result: 1
+					result: 0
 				},
 				{
 					id: 4,
 					question: "Bases optimization on cross-platform analyses, methodical test design, and iterative testing",
-					result: 1
+					result: 0
 				},
 				{
 					id: 5,
 					question: "Reports actionable analytics that consistently leverage an adserver and attribution modeling",
-					result: 1
+					result: 0
 				},
 				{
 					id: 6,
 					question: "Maintains a strong agency-client relationship based on transparency and open dialogue",
-					result: 1
+					result: 0
 				}
 			]
 		},
@@ -169,27 +169,27 @@ var quiz_array = {
 				{
 					id: 1,
 					question: "Driven by insights about my customers, my business, and the real-time marketplace",
-					result: 1
+					result: 0
 				},
 				{
 					id: 2,
 					question: "Explicitly supportive of one or more of my core business priorities",
-					result: 1
+					result: 0
 				},
 				{
 					id: 3,
 					question: "Planned and managed strategically",
-					result: 1
+					result: 0
 				},
 				{
 					id: 4,
 					question: "Designed to use both discoverable and shareable content",
-					result: 1
+					result: 0
 				},
 				{
 					id: 5,
 					question: "Directly engaging to key stakeholders (including internal stakeholders like employees and the C-suite, as well as external stakeholder like customers and regulatory groups.)",
-					result: 1
+					result: 0
 				}
 			]
 		},
@@ -201,22 +201,22 @@ var quiz_array = {
 				{
 					id: 1,
 					question: "A platform/publisher-agnostic inventory and pricing strategy that balances reach with affinity",
-					result: 1
+					result: 0
 				},
 				{
 					id: 2,
 					question: "Targeted toward its audience and leverages multiple data sources",
-					result: 1
+					result: 0
 				},
 				{
 					id: 3,
 					question: "Continuously evaluating publishers to make sure money is following the best performer",
-					result: 1
+					result: 0
 				},
 				{
 					id: 4,
 					question: "A story, designed with creative sequencing and optimal recency and frequency",
-					result: 1
+					result: 0
 				}
 			]
 		},
@@ -228,22 +228,22 @@ var quiz_array = {
 				{
 					id: 1,
 					question: "Maintains a clear and consistent account and campaign structure designed for relevance and efficient daily management",
-					result: 1
+					result: 0
 				},
 				{
 					id: 2,
 					question: "Includes mobile-only campaigns that employs creative assets for users’ mobile feeds and are supported by mobile landing pages",
-					result: 1
+					result: 0
 				},
 				{
 					id: 3,
 					question: "Displays creative formats, chosen based on how well they support the campaign’s objectives",
-					result: 1
+					result: 0
 				},
 				{
 					id: 4,
 					question: "Segments and targets audience on a variety of behavior metrics",
-					result: 1
+					result: 0
 				}
 			]
 		},
@@ -255,22 +255,22 @@ var quiz_array = {
 				{
 					id: 1,
 					question: "Establishes guidelines for how site visitor remarketing pools are defined and maintained",
-					result: 1
+					result: 0
 				},
 				{
 					id: 2,
 					question: "Takes a storytelling approach to creative sequencing",
-					result: 1
+					result: 0
 				},
 				{
 					id: 3,
 					question: "Pools targets based on behavioral and contextual targeting data",
-					result: 1
+					result: 0
 				},
 				{
 					id: 4,
 					question: "Tests platforms to incentivize publisher performance with longer-term commitments",
-					result: 1
+					result: 0
 				}
 			]
 		},
@@ -282,17 +282,17 @@ var quiz_array = {
 				{
 					id: 1,
 					question: "Deal structures informed by a payout strategy geared toward strong publisher relationships",
-					result: 1
+					result: 0
 				},
 				{
 					id: 2,
 					question: "A recruitment strategy that balances high-volume discount publishers with more targeted niche publishers",
-					result: 1
+					result: 0
 				},
 				{
 					id: 3,
 					question: "Brand protection policies to ensure consistency and creative compliance",
-					result: 1
+					result: 0
 				}
 			]
 		},
@@ -304,27 +304,27 @@ var quiz_array = {
 				{
 					id: 1,
 					question: "Provides a clear and consistent account and campaign structure designed for relevance and efficient daily management",
-					result: 1
+					result: 0
 				},
 				{
 					id: 2,
 					question: "Utilizes all relevant ad formats and extensions",
-					result: 1
+					result: 0
 				},
 				{
 					id: 3,
 					question: "Creatively tests and optimizes for specific devices",
-					result: 1
+					result: 0
 				},
 				{
 					id: 4,
 					question: "Includes a bidding strategy designed to support a single performance goal",
-					result: 1
+					result: 0
 				},
 				{
 					id: 5,
 					question: "Is optimized for efficiency to increase volume and ROI",
-					result: 1
+					result: 0
 				}
 			]
 		}
@@ -414,9 +414,17 @@ function clearQuestions(){
 function nextQuestion(){
 	
 	question_number++;
+	
+	
+	
+	
 	var question; 
 	var questions = quiz_array.questions;
-	
+	for(var i = 0; i< questions.length; i++){
+			if(questions[i].id == question_number){
+				question = questions[i];
+			}
+		}
 	if(question_number <= questions.length){
 		
 		for(var i = 0; i< questions.length; i++){
@@ -429,18 +437,119 @@ function nextQuestion(){
 		$("#question_subheader").html(question.subheader);
 		
 		for(var i = 0; i< question.choices.length; i++){
-			questionHTML(question.choices[i]);
+			questionHTML(question.choices[i], question_number);
 		}
+		
+		activateQuestion();
+		getBottomButtons();
+		
 
 	}else{
-		
 		//finish quiz
-		
 	}
 }
 
-function questionHTML(data){
-	var html = "";
+function getBottomButtons(){
+	
+	$("#progress_text_area").html("Question "+question_number+" of "+quiz_array.questions.length);
+	
+	var percent = (parseInt(question_number)/parseInt(quiz_array.questions.length))*100;
+	$("#quiz_progress_bar .bar").css("width", percent+"%");
+	
+	
+	switch(parseInt(question_number)){
+		case 1:
+		
+			var html = "<a href='#' class='skip_button'>Skip</a> <a href='#' class='next_button'>Next</a>";
+		
+		break;
+		
+		default:
+			var html = "<a href='#' class='previous_button'>Previous</a> <a href='#' class='skip_button'>Skip</a> <a href='#' class='next_button'>Next</a>";
+		
+		break;
+		
+		case quiz_array.questions.length:
+			var html = "<a href='#' class='previous_button'>Previous</a> <a href='#' class='skip_button'>Skip</a> <a href='#' class='finish_button'>Finish</a>";
+		break;
+	}
+	
+	$("#buttons_area").html(html);
+	
+	
+}
+
+function questionHTML(data, question_id){
+	
+	
+	var choices_html = "";
+	var choice_result = data.result;
+	
+	
+	for(var i = 1; i<6; i++){
+		var selected = "";
+		if(choice_result == i){
+			selected = "selected";
+		}
+		choices_html += "<a href='#' class='question_choice_item "+selected+"' data-question_id='"+question_id+"' data-id='"+data.id+"' data-value='"+i+"'>"+
+							"<div class='question_choice_item_inner'>"+
+								i+
+							"</div>"
+						"</a>";
+	}
+	
+	var html = "<div class='question_item' data-question_id='"+question_id+"' data-id='"+data.id+"' data-result='"+choice_result+"'>"+
+					"<div class='question_header'>"+
+						"<div class='question_header_inner'>"+
+							data.question+
+						"</div>"+
+					"</div>"+
+					"<div class='question_choices'>"+
+						choices_html+
+					"</div>"+
+					
+			   "</div>";
 	
 	$("#question_area").append(html);
+}
+
+function activateQuestion(){
+	
+	$(".question_choice_item").unbind("click");
+	$(".question_choice_item").click(function(e){
+		
+		e.preventDefault();
+		var button = this;
+		var question_id = $(button).data("question_id");
+		var choice_id = $(button).data("id");
+		var choice_result = $(button).data("value");
+		
+		$(".question_choice_item").each(function(){
+			if($(this).data("question_id") == question_id && $(this).data("id") == choice_id){
+				$(this).removeClass("selected");
+			}
+		});
+		
+		$(".question_item").each(function(){
+			if($(this).data("question_id") == question_id && $(this).data("id") == choice_id){
+				$(this).attr("data-result", choice_result);
+			}
+		});
+		
+		for(var i = 0; i< quiz_array.questions.length; i++){
+			if(quiz_array.questions[i].id == question_id){
+				for(var j = 0; j< quiz_array.questions[i].choices.length; j++){
+					if(quiz_array.questions[i].choices[j].id == choice_id){
+						quiz_array.questions[i].choices[j].result = choice_result;
+					}
+				}
+
+			}
+		}
+		
+		console.log(quiz_array)
+		$(button).addClass("selected");
+		
+	});
+
 }
