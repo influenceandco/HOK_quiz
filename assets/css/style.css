@@ -395,10 +395,23 @@ a.question_choice_item.selected{
 }
 #results_header{
 	font-size: 2.25em;
->>>>>>> Stashed changes
+
 }
 
-
+#total_percent_wrapper.temp #total_percent_border{
+	transform: none;
+	-ms-transform: none;
+    -webkit-transform: none;
+}
+#total_percent_wrapper.temp #total_percent_border #total_percent_inner{
+	transform: none;
+	-ms-transform: none;
+    -webkit-transform: none;
+}
+.result_image{
+	max-width: 100px;
+	margin: 0px auto;
+}
 /*********** RESPONSIVE **********/
 
 

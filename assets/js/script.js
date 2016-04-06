@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	
+
 		
 	particlesJS('particles-js',
 	  
@@ -132,15 +134,15 @@ var quiz_array = {
 			max:49,
 			color_class: "red",
 			title: "Very Bad!",
-			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			description: "Thanks for taking our quiz! Your results below will highlight your strengths and areas for improvement. We strongly recommend downloading and sharing your results with your team to make sure you’re all aligned on next steps. We'll be in touch with you shortly to discuss the results of your assessment in more detail. If you have any questions in the meantime, feel free to reach out to us at <a href='mailto:diagnostics@houseofkaizen.com'>diagnostics@houseofkaizen.com</a>.",
 			image: ""
 		},
 		{
 			min: 50,
 			max:74,
 			color_class: "yellow",
-			title: "You&rsquo;re ok...",
-			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			title: "You can do better...",
+			description: "Thanks for taking our quiz! Your results below will highlight your strengths and areas for improvement. We strongly recommend downloading and sharing your results with your team to make sure you’re all aligned on next steps. We'll be in touch with you shortly to discuss the results of your assessment in more detail. If you have any questions in the meantime, feel free to reach out to us at <a href='mailto:diagnostics@houseofkaizen.com'>diagnostics@houseofkaizen.com</a>.",
 			image: ""
 		},
 		{
@@ -148,7 +150,7 @@ var quiz_array = {
 			max:100,
 			color_class: "green",
 			title: "Lookin&rsquo; pretty good!",
-			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			description: "Thanks for taking our quiz! Your results below will highlight your strengths and areas for improvement. We strongly recommend downloading and sharing your results with your team to make sure you’re all aligned on next steps. We'll be in touch with you shortly to discuss the results of your assessment in more detail. If you have any questions in the meantime, feel free to reach out to us at <a href='mailto:diagnostics@houseofkaizen.com'>diagnostics@houseofkaizen.com</a>.",
 			image: ""
 		}		
 	],
@@ -167,24 +169,24 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Existing Performance",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! When evaluating your existing performance marketing program, keep in mind that it should focus on key performance indicators, have a clearly defined budget requirement, and prioritize mobile based on scale, quality, and efficiency. Optimization should be based on cross-platform analyses, methodical test design, and iterative testing. Your program should report actionable analytics. Most important, you should maintain a strong client-agency relationship that is based on transparency and open dialogue!",
+					image: "assets/img/icons/thumb.svg"
 				},
 				{
 					min: 50,
 					max:74,
 					color_class: "yellow",
 					title: "Existing Performance",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! When evaluating your existing performance marketing program, keep in mind that it should focus on key performance indicators, have a clearly defined budget requirement, and prioritize mobile based on scale, quality, and efficiency. Optimization should be based on cross-platform analyses, methodical test design, and iterative testing. Your program should report actionable analytics. Most important, you should maintain a strong client-agency relationship that is based on transparency and open dialogue!",
+					image: "assets/img/icons/thumb.svg"
 				},
 				{
 					min: 75,
 					max:100,
 					color_class: "green",
 					title: "Existing Performance",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! When evaluating your existing performance marketing program, keep in mind that it should focus on key performance indicators, have a clearly defined budget requirement, and prioritize mobile based on scale, quality, and efficiency. Optimization should be based on cross-platform analyses, methodical test design, and iterative testing. Your program should report actionable analytics. Most important, you should maintain a strong client-agency relationship that is based on transparency and open dialogue!",
+					image: "assets/img/icons/thumb.svg"
 				}		
 			],
 			choices: [
@@ -234,24 +236,24 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Social / Content Marketing",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in social and content marketing, note that your efforts should be driven by insights about your customers, explicitly supportive of your core business priorities, and strategically planned and managed. You should design your campaigns to use discoverable and shareable content. Most important, your content should be directly engaging to key stakeholders.",
+					image: "assets/img/icons/eye.svg"
 				},
 				{
 					min: 50,
 					max:74,
 					color_class: "yellow",
 					title: "Social / Content Marketing",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in social and content marketing, note that your efforts should be driven by insights about your customers, explicitly supportive of your core business priorities, and strategically planned and managed. You should design your campaigns to use discoverable and shareable content. Most important, your content should be directly engaging to key stakeholders.",
+					image: "assets/img/icons/eye.svg"
 				},
 				{
 					min: 75,
 					max:100,
 					color_class: "green",
 					title: "Social / Content Marketing",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in social and content marketing, note that your efforts should be driven by insights about your customers, explicitly supportive of your core business priorities, and strategically planned and managed. You should design your campaigns to use discoverable and shareable content. Most important, your content should be directly engaging to key stakeholders.",
+					image: "assets/img/icons/eye.svg"
 				}		
 			],
 			choices: [
@@ -296,24 +298,24 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Programmatic Display",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in programmatic display, first make sure that you are using a platform or publisher-agnostic inventory and pricing strategy that balances reach with affinity. You should use audience targeting and segmentation that leverages multiple data sources, and you should engage in continuous publisher testing and evaluation to ensure that money always follows the best performer. Your programmatic display should take a storytelling approach to creative sequencing and optimize recency and frequency.",
+					image: "assets/img/icons/computer.svg"
 				},
 				{
 					min: 50,
 					max:74,
 					color_class: "yellow",
 					title: "Programmatic Display",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in programmatic display, first make sure that you are using a platform or publisher-agnostic inventory and pricing strategy that balances reach with affinity. You should use audience targeting and segmentation that leverages multiple data sources, and you should engage in continuous publisher testing and evaluation to ensure that money always follows the best performer. Your programmatic display should take a storytelling approach to creative sequencing and optimize recency and frequency.",
+					image: "assets/img/icons/computer.svg"
 				},
 				{
 					min: 75,
 					max:100,
 					color_class: "green",
 					title: "Programmatic Display",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in programmatic display, first make sure that you are using a platform or publisher-agnostic inventory and pricing strategy that balances reach with affinity. You should use audience targeting and segmentation that leverages multiple data sources, and you should engage in continuous publisher testing and evaluation to ensure that money always follows the best performer. Your programmatic display should take a storytelling approach to creative sequencing and optimize recency and frequency.",
+					image: "assets/img/icons/computer.svg"
 				}		
 			],
 			choices: [
@@ -353,24 +355,24 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Paid Social Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re considering a paid social program, make sure it maintains a clear and consistent account and campaign structure that includes a mobile-only campaign. The campaign should display creative formats that are chosen on the basis of how well they support its objectives. Most important, the paid social program should be segmented and should target your audience using a variety of behavior metrics.",
+					image: "assets/img/icons/card.svg"
 				},
 				{
 					min: 50,
 					max:74,
 					color_class: "yellow",
 					title: "Paid Social Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re considering a paid social program, make sure it maintains a clear and consistent account and campaign structure that includes a mobile-only campaign. The campaign should display creative formats that are chosen on the basis of how well they support its objectives. Most important, the paid social program should be segmented and should target your audience using a variety of behavior metrics.",
+					image: "assets/img/icons/card.svg"
 				},
 				{
 					min: 75,
 					max:100,
 					color_class: "green",
 					title: "Paid Social Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re considering a paid social program, make sure it maintains a clear and consistent account and campaign structure that includes a mobile-only campaign. The campaign should display creative formats that are chosen on the basis of how well they support its objectives. Most important, the paid social program should be segmented and should target your audience using a variety of behavior metrics.",
+					image: "assets/img/icons/card.svg"
 				}		
 			],
 			choices: [
@@ -410,24 +412,24 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Remarketing",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re considering remarketing, you should have established guidelines for defining and maintaining site visitor remarketing pools. Your remarketing should take a storytelling approach to creative sequencing, and your pools should target on the basis of behavioral and contextual targeting data. You should test platforms to incentivize publisher performance with long-term commitments.",
+					image: "assets/img/icons/arrow.svg"
 				},
 				{
 					min: 50,
 					max:74,
 					color_class: "yellow",
 					title: "Remarketing",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re considering remarketing, you should have established guidelines for defining and maintaining site visitor remarketing pools. Your remarketing should take a storytelling approach to creative sequencing, and your pools should target on the basis of behavioral and contextual targeting data. You should test platforms to incentivize publisher performance with long-term commitments.",
+					image: "assets/img/icons/arrow.svg"
 				},
 				{
 					min: 75,
 					max:100,
 					color_class: "green",
 					title: "Remarketing",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re considering remarketing, you should have established guidelines for defining and maintaining site visitor remarketing pools. Your remarketing should take a storytelling approach to creative sequencing, and your pools should target on the basis of behavioral and contextual targeting data. You should test platforms to incentivize publisher performance with long-term commitments.",
+					image: "assets/img/icons/arrow.svg"
 				}		
 			],
 			choices: [
@@ -467,24 +469,24 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Affiliate Marketing Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in affiliate marketing, be sure that your deal structures are informed by a payout strategy geared toward strong publisher relationships. You should use a recruitment strategy that balances high-volume discount publishers with more targeted niche publishers. Above all, you should have very clear brand-protection policies to ensure consistency and creative compliance. ",
+					image: "assets/img/icons/person.svg"
 				},
 				{
 					min: 50,
 					max:74,
 					color_class: "yellow",
 					title: "Affiliate Marketing Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in affiliate marketing, be sure that your deal structures are informed by a payout strategy geared toward strong publisher relationships. You should use a recruitment strategy that balances high-volume discount publishers with more targeted niche publishers. Above all, you should have very clear brand-protection policies to ensure consistency and creative compliance. ",
+					image: "assets/img/icons/person.svg"
 				},
 				{
 					min: 75,
 					max:100,
 					color_class: "green",
 					title: "Affiliate Marketing Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					image: ""
+					description: "You skipped this question! If you’re interested in affiliate marketing, be sure that your deal structures are informed by a payout strategy geared toward strong publisher relationships. You should use a recruitment strategy that balances high-volume discount publishers with more targeted niche publishers. Above all, you should have very clear brand-protection policies to ensure consistency and creative compliance. ",
+					image: "assets/img/icons/person.svg"
 				}		
 			],
 			choices: [
@@ -519,7 +521,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Paid Search Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					description: "You skipped this question! If you want to participate in a paid search program, ensure that your strategy provides a clear, consistent account and campaign structure that utilizes all relevant ad formats and extensions. It is very important that your program creatively tests and optimizes for specific devices. Your campaign should include a bidding strategy that is designed to support a single performance goal and is optimized for efficiency to increase return on investment.",
 					image: ""
 				},
 				{
@@ -527,7 +529,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Paid Search Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					description: "You skipped this question! If you want to participate in a paid search program, ensure that your strategy provides a clear, consistent account and campaign structure that utilizes all relevant ad formats and extensions. It is very important that your program creatively tests and optimizes for specific devices. Your campaign should include a bidding strategy that is designed to support a single performance goal and is optimized for efficiency to increase return on investment.",
 					image: ""
 				},
 				{
@@ -535,7 +537,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Paid Search Program",
-					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					description: "You skipped this question! If you want to participate in a paid search program, ensure that your strategy provides a clear, consistent account and campaign structure that utilizes all relevant ad formats and extensions. It is very important that your program creatively tests and optimizes for specific devices. Your campaign should include a bidding strategy that is designed to support a single performance goal and is optimized for efficiency to increase return on investment.",
 					image: ""
 				}		
 			],
@@ -1005,6 +1007,9 @@ function resultHTML(data){
 	
 	var skipped = data.skipped;
 	
+	var improvement_html = "";
+	var highest_html = "";
+	
 	for(var i = 0; i<data.result_options.length; i++){
 		if((result_percent >= data.result_options[i].min && result_percent < data.result_options[i].max) || (result_percent == data.result_options[i].max && result_percent == 100)){
 			result_header = data.result_options[i].title;
@@ -1013,6 +1018,34 @@ function resultHTML(data){
 			result_color_class = data.result_options[i].color_class;
 		}
 	}
+	
+	for(var i = 0; i<data.choices.length; i++){
+	
+		if(data.choices[i].result <= 3){
+			
+			if(improvement_html == ""){
+				improvement_html +="<p>Focus on these areas for improvement:</p><ul>"
+			}
+			improvement_html += "<li>"+data.choices[i].question+"</li>";
+			
+		}else{
+			
+			if(highest_html == ""){
+				highest_html +="<p>You scored highest in these areas: </p><ul>"
+			}
+			highest_html += "<li>"+data.choices[i].question+"</li>";
+			
+		}
+	}
+	
+	if(improvement_html != ""){
+		improvement_html += "</ul>";
+	}
+	if(highest_html != ""){
+		highest_html += "</ul>";
+	}
+	
+	
 	
 	if(skipped == true){
 	
@@ -1041,11 +1074,12 @@ function resultHTML(data){
 					  	'<div class="bar" style="width: '+result_percent+'%;"></div>'+
 					'</div>'+
 					"<div class='row-fluid text_wrapper'>"+
-						"<div class='span4'>"+
+						"<div class='span4 result_image'>"+
 							"<img src='"+result_image+"'>"+
 						"</div>"+
 						"<div class='span8'>"+
-							result_description+
+							improvement_html+
+							highest_html+
 						"</div>"+
 					"</div>"+
 				"</div>"+
@@ -1062,8 +1096,36 @@ function resultHTML(data){
 
 function activatePDF(){
 	
+	
+	
 	$("#download_button").unbind("click");
 	$("#download_button").click(function(e){
+		e.preventDefault();
+		
+	
+			$(window).scrollTop(0);
+			setTimeout(function(){
+				
+				$("#pdf_export").css("background", "white");
+				$("#total_percent_wrapper").addClass("temp");
+				html2canvas($("#pdf_export")).then(function(canvas) {
+	
+					var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); 
+					var link = document.createElement('a');
+				    link.download = "HOK-results.png";
+				    link.href = image;
+				    link.click();
+					$("#pdf_export").css("background", "transparent");
+					$("#total_percent_wrapper").removeClass("temp");
+				});		    
+				  
+				
+				
+			}, 100)
+        
+		
+		
+		
 	});
 	
 	
