@@ -292,6 +292,19 @@ a.question_choice_item.selected{
 	text-align: center;
 }
 
+.results_box{
+	 background-color: #f0f0f0
+}
+
+.result_top{
+	margin-top: 50px
+}
+
+.boxes_spacing{
+	margin-left: 20px
+}
+
+
 /*********** RESPONSIVE **********/
 
 
