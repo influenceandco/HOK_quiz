@@ -132,7 +132,7 @@ var quiz_array = {
 			max:49,
 			color_class: "red",
 			title: "Very Bad!",
-			description: "",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			image: ""
 		},
 		{
@@ -140,7 +140,7 @@ var quiz_array = {
 			max:74,
 			color_class: "yellow",
 			title: "You&rsquo;re ok...",
-			description: "",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			image: ""
 		},
 		{
@@ -148,7 +148,7 @@ var quiz_array = {
 			max:100,
 			color_class: "green",
 			title: "Lookin&rsquo; pretty good!",
-			description: "",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			image: ""
 		}		
 	],
@@ -166,7 +166,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Existing Performance",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -174,7 +174,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Existing Performance",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -182,7 +182,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Existing Performance",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				}		
 			],
@@ -232,7 +232,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Social / Content Marketing",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -240,7 +240,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Social / Content Marketing",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -248,7 +248,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Social / Content Marketing",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				}		
 			],
@@ -293,7 +293,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Programmatic Display",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -301,7 +301,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Programmatic Display",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -309,7 +309,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Programmatic Display",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				}		
 			],
@@ -349,7 +349,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Paid Social Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -357,7 +357,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Paid Social Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -365,7 +365,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Paid Social Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				}		
 			],
@@ -405,7 +405,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Remarketing",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -413,7 +413,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Remarketing",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -421,7 +421,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Remarketing",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				}		
 			],
@@ -461,7 +461,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Affiliate Marketing Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -469,7 +469,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Affiliate Marketing Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -477,7 +477,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Affiliate Marketing Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				}		
 			],
@@ -512,7 +512,7 @@ var quiz_array = {
 					max:49,
 					color_class: "red",
 					title: "Paid Search Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -520,7 +520,7 @@ var quiz_array = {
 					max:74,
 					color_class: "yellow",
 					title: "Paid Search Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				},
 				{
@@ -528,7 +528,7 @@ var quiz_array = {
 					max:100,
 					color_class: "green",
 					title: "Paid Search Program",
-					description: "",
+					description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					image: ""
 				}		
 			],
@@ -760,6 +760,7 @@ function activateButtons(){
 		$("#quiz_page").fadeOut(500, function(){
 	        clearQuestions();
 	        nextQuestion();
+	      // finishQuiz();
 	        $("#quiz_page").fadeIn(500)
         });
 		
@@ -885,11 +886,15 @@ function activateQuestion(){
 function finishQuiz(){
 	$("#quiz_page").remove();
 	
+	getResults();
+	displayResults();
+	
 	$("#results_page").fadeIn(500, function(){
+		
         $("#results_page").show();
     });
     
-    getResults();
+    
 }
 
 function getResults(){
@@ -923,7 +928,75 @@ function getResults(){
 	quiz_array.total_possible = overall_possible;
 	quiz_array.results = overall_results;
 	quiz_array.percent = overall_percent;
+}
+
+function displayResults(){
+
+	var total_result_header = "";
+	var total_result_description = "";
+	var total_result_color_class = "";
 	
-	console.log(overall_percent);
-	console.log(quiz_array);
+	var total_percent = quiz_array.percent;
+	
+	for(var i = 0; i<quiz_array.result_options.length; i++){
+		if((total_percent >= quiz_array.result_options[i].min && total_percent < quiz_array.result_options[i].max) || (total_percent == quiz_array.result_options[i].max && total_percent == 100)){
+			total_result_header = quiz_array.result_options[i].title;
+			total_result_description = quiz_array.result_options[i].description;
+			total_result_color_class = quiz_array.result_options[i].color_class;
+		}
+	}
+	
+	$("#results_header").html(total_result_header);
+	$("#results_description").html(total_result_description);
+	$("#total_percent_border").addClass(total_result_color_class);
+	$("#total_percent_inner").html(parseFloat(total_percent).toFixed(0));
+	
+	
+	
+	for(var i = 0; i<quiz_array.questions.length; i++){
+		data = quiz_array.questions[i];
+		resultHTML(data);
+		
+	}
+	
+	$("#share_email_button").attr("href", "mailto:?subject=Subject of email&body=I scored a "+parseFloat(total_percent).toFixed(0)+" percent on this quiz.  Add more copy. Here is the link: http://www.website.com.");
+	
+}
+
+function resultHTML(data){
+	
+	var result_header = "";
+	var result_description = "";
+	var result_color_class = "";
+	var result_image = "";
+	
+	var result_percent = data.percent;
+	
+	for(var i = 0; i<data.result_options.length; i++){
+		if((result_percent >= data.result_options[i].min && result_percent < data.result_options[i].max) || (result_percent == data.result_options[i].max && result_percent == 100)){
+			result_header = data.result_options[i].title;
+			result_description = data.result_options[i].description;
+			result_image = data.result_options[i].image;
+			result_color_class = data.result_options[i].color_class;
+		}
+	}
+	
+	var html = "<div class='results_box'>"+
+					"<div class='results_box_inner'>"+
+						"<h4 class='uppercase text_wrapper'>"+result_header+" <span class='pull-right'> "+parseFloat(result_percent).toFixed(0)+"%</span></h4>"+
+						'<div class="progress '+result_color_class+'">'+
+						  	'<div class="bar" style="width: '+result_percent+'%;"></div>'+
+						'</div>'+
+						"<div class='row-fluid text_wrapper'>"+
+							"<div class='span4'>"+
+								"<img src='"+result_image+"'>"+
+							"</div>"+
+							"<div class='span8'>"+
+								result_description+
+							"</div>"+
+						"</div>"+
+					"</div>"+
+			   "</div>";
+	
+	$("#results_area").append(html);
 }

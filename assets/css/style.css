@@ -1,11 +1,11 @@
 /************** MAIN ELEMENTS ***************/
 @font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('../fonts/ProximaNova-Reg-webfont.eot');
-    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
-         url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
-         url('../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-family: 'AvenirBlack';
+    src: url('../fonts/Avenir-Black.eot');
+    src: url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Avenir-Black.woff') format('woff'),
+         url('../fonts/Avenir-Black.ttf') format('truetype'),
+         url('../fonts/Avenir-Black.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -13,12 +13,12 @@
 
 
 @font-face {
-    font-family: 'proxima_nova_ltsemibold';
-    src: url('../fonts/ProximaNova-Sbold-webfont.eot');
-    src: url('../fonts/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff'),
-         url('../fonts/ProximaNova-Sbold-webfont.ttf') format('truetype'),
-         url('../fonts/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+    font-family: 'AvenirBook';
+    src: url('../fonts/Avenir-Book.eot');
+    src: url('../fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Avenir-Book.woff') format('woff'),
+         url('../fonts/Avenir-Book.ttf') format('truetype'),
+         url('../fonts/Avenir-Book.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,26 +27,26 @@
 
 html, body{
 	height: 100%;
-    font-family: 'proxima_nova_rgregular';
+    font-family: 'AvenirBook';
 	color: #454747;
 	font-weight: 300;
 	font-size: 16px;
 }
 h1{
 	font-size: 2.25em;
-    font-family: 'proxima_nova_ltsemibold';
+    font-family: 'AvenirBlack';
 }
 h2{
 	font-size: 1.8em;
-    font-family: 'proxima_nova_ltsemibold';
+    font-family: 'AvenirBlack';
 }
 h3{
 	font-size: 1.5em;
-    font-family: 'proxima_nova_ltsemibold';
+    font-family: 'AvenirBlack';
 }
 h4{
 	font-size: 1.2em;
-    font-family: 'proxima_nova_ltsemibold';
+    font-family: 'AvenirBlack';
 }
 p{
 	1em;
@@ -95,6 +95,7 @@ input.main_input{
 	border-radius: 0px;
 	box-shadow: none;
 	padding: 5px 5%;
+	text-align: left !important;
 	
 }
 input.main_input:focus{
@@ -122,8 +123,8 @@ input.main_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
 	text-transform: uppercase;
 }
 
-button.main_button{
-	padding: 12.5px 30px;
+button.main_button, a.main_button{
+	padding: 12.5px 60px;
 	text-transform: uppercase;
 	color: white;
 	background: #1a9645;
@@ -132,13 +133,14 @@ button.main_button{
 	text-shadow: none;
 	border: none;
 	outline: none !important;
+	text-decoration: none !important;
 }
-button.main_button:hover, button.main_button:active, button.main_button:focus{
+button.main_button:hover, a.main_button:hover, button.main_button:active, a.main_button:active, button.main_button:focus, a.main_button:focus{
 	background: #16803b;
 }
 
 #particles-js{
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0px;
 	left: 0px;
@@ -189,6 +191,10 @@ label.error{
 	margin-top: 5%;
 }
 
+#results_wrapper{
+	margin-top: 5%;
+}
+
 #question_area{
 	display:-webkit-box;
 	display:-moz-box;
@@ -203,6 +209,32 @@ label.error{
 	-webkit-flex-flow:row wrap;
 }
 
+#results_area{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
+	align-items:flex-start;
+	-webkit-align-items:flex-start;
+	justify-content:center;
+	-webkit-justify-content:center;
+	flex-flow:row wrap;
+	-webkit-flex-flow:row wrap;
+}
+
+
+.results_box{
+	flex-basis: 45%;
+	-webkit-flex-basis: 45%;
+	margin: 30px 2.5%;
+	background: #f0f0f0;
+	text-align: left;
+	font-size: 0.85em;
+}
+.results_box_inner{
+	padding: 20px;
+}
 .question_item{
 	flex-basis: 25%;
 	-webkit-flex-basis: 25%;
@@ -252,16 +284,35 @@ a.question_choice_item.selected{
 	background: #99caaa;
 }
 
-#quiz_progress_bar.progress{
+.progress{
 	border: 2px solid #1a9645;
 	background: transparent;
 	box-shadow: none;
 	height: 10px;
 	margin-bottom: 30px;
 }
-#quiz_progress_bar.progress .bar{
+.progress .bar{
 	background: #1a9645;
-	border: none;
+	border: none !important;
+	box-shadow: none !important;
+}
+.progress.green{
+	border: 2px solid #1a9645;
+}
+.progress.green .bar{
+	background: #1a9645;
+}
+.progress.yellow{
+	border: 2px solid #f0b91b;
+}
+.progress.yellow .bar{
+	background: #f0b91b;
+}
+.progress.red{
+	border: 2px solid #d92232;
+}
+.progress.red .bar{
+	background: #d92232;
 }
 
 #buttons_area{
@@ -292,16 +343,46 @@ a.question_choice_item.selected{
 	text-align: center;
 }
 
-.results_box{
-	 background-color: #f0f0f0
+
+#total_percent_wrapper{
+     margin: 75px auto;
+}
+#total_percent_border{
+	border-radius: 0%;
+    width: 150px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 150px;
+    border: 5px solid #1a9645;
+    margin: 30px auto;
 }
 
-.result_top{
-	margin-top: 50px
+#total_percent_border.green{
+    border: 5px solid #1a9645;
+}
+#total_percent_border.yellow{
+    border: 5px solid #f0b91b;
+}
+#total_percent_border.red{
+    border: 5px solid #d92232;
 }
 
-.boxes_spacing{
-	margin-left: 20px
+#total_percent_inner{
+	 position: absolute;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-size: 4em;
+    line-height: 150px;
+    height: 150px;
+    margin: 0px auto;
+    text-align: center;
+    width: 150px;
+}
+#results_header{
+	font-size: 2.25em;
+>>>>>>> Stashed changes
 }
 
 
@@ -348,6 +429,12 @@ a.question_choice_item.selected{
 		width: 100%;
 		margin: 20px 0px;
 		padding: 10px 0px;
+	}
+	
+	.results_box{
+		flex-basis: 100%;
+		-webkit-flex-basis: 100%;
+		margin: 30px 0%;
 	}
 
 }
