@@ -159,6 +159,7 @@ var quiz_array = {
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
 			total_possible: 0,
 			results: 0,
+			skipped: false,
 			percent: 0,
 			result_options:[
 				{
@@ -225,6 +226,7 @@ var quiz_array = {
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
 			total_possible: 0,
 			results: 0,
+			skipped: false,
 			percent: 0,
 			result_options:[
 				{
@@ -286,6 +288,7 @@ var quiz_array = {
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
 			total_possible: 0,
 			results: 0,
+			skipped: false,
 			percent: 0,
 			result_options:[
 				{
@@ -342,6 +345,7 @@ var quiz_array = {
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
 			total_possible: 0,
 			results: 0,
+			skipped: false,
 			percent: 0,
 			result_options:[
 				{
@@ -398,6 +402,7 @@ var quiz_array = {
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
 			total_possible: 0,
 			results: 0,
+			skipped: false,
 			percent: 0,
 			result_options:[
 				{
@@ -454,6 +459,7 @@ var quiz_array = {
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
 			total_possible: 0,
 			results: 0,
+			skipped: false,
 			percent: 0,
 			result_options:[
 				{
@@ -505,6 +511,7 @@ var quiz_array = {
 			subheader: "Please rate each item from 1 to 5. 5 is the best score and 1 is the lowest.",
 			total_possible: 0,
 			results: 0,
+			skipped: false,
 			percent: 0,
 			result_options:[
 				{
@@ -757,6 +764,12 @@ function activateButtons(){
 	$(".skip_button").click(function(e){
 		e.preventDefault();
 		
+		for(var i = 0; i< quiz_array.questions.length; i++){
+			if(quiz_array.questions[i].id == question_number){
+				quiz_array.questions[i].skipped = true;
+			}
+		}
+		
 		$("#quiz_page").fadeOut(500, function(){
 	        clearQuestions();
 	        nextQuestion();
@@ -780,6 +793,13 @@ function activateButtons(){
 		});
 		
 		if(found != true){
+			
+			for(var i = 0; i< quiz_array.questions.length; i++){
+				if(quiz_array.questions[i].id == question_number){
+					quiz_array.questions[i].skipped = false;
+				}
+			}
+			
 			$("#quiz_page").fadeOut(500, function(){
 		        clearQuestions();
 		        nextQuestion();
@@ -910,18 +930,23 @@ function getResults(){
 		var total_possible = 0;
 		var results = 0;
 		
-		for(var j = 0; j<quiz_array.questions[i].choices.length; j++){
-			total_possible = total_possible + 5;
-			overall_possible = overall_possible +5;
-			results = results + parseInt(quiz_array.questions[i].choices[j].result);
-			overall_results = overall_results + parseInt(quiz_array.questions[i].choices[j].result);
-		}
+			
+			for(var j = 0; j<quiz_array.questions[i].choices.length; j++){
+				
+				total_possible = total_possible + 5;
+				results = results + parseInt(quiz_array.questions[i].choices[j].result);
+				
+				if(quiz_array.questions[i].skipped != true){
+					overall_possible = overall_possible +5;
+					overall_results = overall_results + parseInt(quiz_array.questions[i].choices[j].result);
+				}
+			}
+			
+			var percent = (results/total_possible)*100;
+			quiz_array.questions[i].total_possible = total_possible;
+			quiz_array.questions[i].results = results;
+			quiz_array.questions[i].percent = percent;
 		
-		var percent = (results/total_possible)*100;
-		quiz_array.questions[i].total_possible = total_possible;
-		quiz_array.questions[i].results = results;
-		quiz_array.questions[i].percent = percent;
-
 	}
 	
 	overall_percent = (overall_results/overall_possible)*100;
@@ -949,7 +974,13 @@ function displayResults(){
 	$("#results_header").html(total_result_header);
 	$("#results_description").html(total_result_description);
 	$("#total_percent_border").addClass(total_result_color_class);
-	$("#total_percent_inner").html(parseFloat(total_percent).toFixed(0));
+	
+	
+	if(isNaN(total_percent)){
+		$("#total_percent_inner").html("0");
+	}else{
+		$("#total_percent_inner").html(parseFloat(total_percent).toFixed(0));
+	}
 	
 	
 	
@@ -959,7 +990,7 @@ function displayResults(){
 		
 	}
 	
-	$("#share_email_button").attr("href", "mailto:?subject=Subject of email&body=I scored a "+parseFloat(total_percent).toFixed(0)+" percent on this quiz.  Add more copy. Here is the link: http://www.website.com.");
+	activatePDF();
 	
 }
 
@@ -972,6 +1003,8 @@ function resultHTML(data){
 	
 	var result_percent = data.percent;
 	
+	var skipped = data.skipped;
+	
 	for(var i = 0; i<data.result_options.length; i++){
 		if((result_percent >= data.result_options[i].min && result_percent < data.result_options[i].max) || (result_percent == data.result_options[i].max && result_percent == 100)){
 			result_header = data.result_options[i].title;
@@ -981,22 +1014,60 @@ function resultHTML(data){
 		}
 	}
 	
-	var html = "<div class='results_box'>"+
-					"<div class='results_box_inner'>"+
-						"<h4 class='uppercase text_wrapper'>"+result_header+" <span class='pull-right'> "+parseFloat(result_percent).toFixed(0)+"%</span></h4>"+
-						'<div class="progress '+result_color_class+'">'+
-						  	'<div class="bar" style="width: '+result_percent+'%;"></div>'+
-						'</div>'+
-						"<div class='row-fluid text_wrapper'>"+
-							"<div class='span4'>"+
-								"<img src='"+result_image+"'>"+
-							"</div>"+
-							"<div class='span8'>"+
-								result_description+
+	if(skipped == true){
+	
+		var html = "<div class='results_box'>"+
+						"<div class='results_box_inner'>"+
+							"<h4 class='uppercase text_wrapper'>"+result_header+" <span class='pull-right skipped_class'>Skipped</span></h4>"+
+							'<div class="progress gray">'+
+							  	'<div class="bar" style="width: 0%;"></div>'+
+							'</div>'+
+							"<div class='row-fluid text_wrapper'>"+
+								"<div class='span4'>"+
+									"<img src='"+result_image+"'>"+
+								"</div>"+
+								"<div class='span8'>"+
+									result_description+
+								"</div>"+
 							"</div>"+
 						"</div>"+
+				   "</div>";
+	}else{
+		
+		var html = "<div class='results_box'>"+
+				"<div class='results_box_inner'>"+
+					"<h4 class='uppercase text_wrapper'>"+result_header+" <span class='pull-right'> "+parseFloat(result_percent).toFixed(0)+"%</span></h4>"+
+					'<div class="progress '+result_color_class+'">'+
+					  	'<div class="bar" style="width: '+result_percent+'%;"></div>'+
+					'</div>'+
+					"<div class='row-fluid text_wrapper'>"+
+						"<div class='span4'>"+
+							"<img src='"+result_image+"'>"+
+						"</div>"+
+						"<div class='span8'>"+
+							result_description+
+						"</div>"+
 					"</div>"+
-			   "</div>";
+				"</div>"+
+		   "</div>";
+
+	}
 	
 	$("#results_area").append(html);
 }
+
+
+
+
+
+function activatePDF(){
+	
+	$("#download_button").unbind("click");
+	$("#download_button").click(function(e){
+	});
+	
+	
+	
+}
+
+

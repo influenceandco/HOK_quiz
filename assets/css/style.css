@@ -296,6 +296,14 @@ a.question_choice_item.selected{
 	border: none !important;
 	box-shadow: none !important;
 }
+
+.progress.gray{
+	border: 2px solid #aeb1b1;
+}
+.progress.gray .bar{
+	background: #aeb1b1;
+}
+
 .progress.green{
 	border: 2px solid #1a9645;
 }
@@ -313,6 +321,11 @@ a.question_choice_item.selected{
 }
 .progress.red .bar{
 	background: #d92232;
+}
+
+.skipped_class{
+	color: #aeb1b1;
+	font-size: 0.85em;
 }
 
 #buttons_area{
