@@ -125,6 +125,7 @@ var quiz_array = {
 	name: "",
 	email: "",
 	completed_quiz: false,
+	downloaded_quiz: false,
 	total_possible: 0,
 	results: 0,
 	percent: 0,
@@ -609,25 +610,9 @@ $("#start_quiz_form").validate({
         quiz_array["name"] = full_name;
         quiz_array["email"] = email;
         
-        ///send email and name somewhere.....
-        /*
-        $.ajax({
-            type: "POST",
-            url: "custom_script.php",
-            data: data,
-            success: function (res) {
-				
-				try
-				{
-				 	
-				}
-				catch(e)
-				{
-                 $("#start_quiz_form_error").html(e);
-				} 
-            }
-        });
-        */
+        
+        saveResults()
+        
                 
         clearQuestions();
         nextQuestion();
@@ -955,6 +940,8 @@ function getResults(){
 	quiz_array.total_possible = overall_possible;
 	quiz_array.results = overall_results;
 	quiz_array.percent = overall_percent;
+	
+	saveResults();
 }
 
 function displayResults(){
@@ -1101,7 +1088,8 @@ function activatePDF(){
 	$("#download_button").unbind("click");
 	$("#download_button").click(function(e){
 		e.preventDefault();
-		
+			quiz_array.downloaded_quiz = true;
+			saveResults();
 	
 			$(window).scrollTop(0);
 			setTimeout(function(){
@@ -1132,4 +1120,25 @@ function activatePDF(){
 	
 }
 
+function saveResults(){
+	///send email and name somewhere...
+    /*
+    $.ajax({
+        type: "POST",
+        url: "custom_script.php",
+        data: data,
+        success: function (res) {
+			
+			try
+			{
+			 	
+			}
+			catch(e)
+			{
+             $("#start_quiz_form_error").html(e);
+			} 
+        }
+    });
+    */
+}
 
