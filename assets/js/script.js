@@ -134,7 +134,7 @@ var quiz_array = {
 			min: 0,
 			max:49,
 			color_class: "red",
-			title: "Very Bad!",
+			title: "You can do better...",
 			description: "Thanks for taking our quiz! Your results below will highlight your strengths and areas for improvement. We strongly recommend downloading and sharing your results with your team to make sure you’re all aligned on next steps. We'll be in touch with you shortly to discuss the results of your assessment in more detail. If you have any questions in the meantime, feel free to reach out to us at <a href='mailto:diagnostics@houseofkaizen.com'>diagnostics@houseofkaizen.com</a>.",
 			image: ""
 		},
@@ -142,7 +142,7 @@ var quiz_array = {
 			min: 50,
 			max:74,
 			color_class: "yellow",
-			title: "You can do better...",
+			title: "You&rsquo;re on the right track!",
 			description: "Thanks for taking our quiz! Your results below will highlight your strengths and areas for improvement. We strongly recommend downloading and sharing your results with your team to make sure you’re all aligned on next steps. We'll be in touch with you shortly to discuss the results of your assessment in more detail. If you have any questions in the meantime, feel free to reach out to us at <a href='mailto:diagnostics@houseofkaizen.com'>diagnostics@houseofkaizen.com</a>.",
 			image: ""
 		},
@@ -951,6 +951,9 @@ function displayResults(){
 	var total_result_color_class = "";
 	
 	var total_percent = quiz_array.percent;
+	if(isNaN(total_percent)){
+		total_percent = 0;
+	}
 	
 	for(var i = 0; i<quiz_array.result_options.length; i++){
 		if((total_percent >= quiz_array.result_options[i].min && total_percent < quiz_array.result_options[i].max) || (total_percent == quiz_array.result_options[i].max && total_percent == 100)){
