@@ -523,7 +523,7 @@ var quiz_array = {
 					color_class: "red",
 					title: "Paid Search Program",
 					description: "You skipped this question! If you want to participate in a paid search program, ensure that your strategy provides a clear, consistent account and campaign structure that utilizes all relevant ad formats and extensions. It is very important that your program creatively tests and optimizes for specific devices. Your campaign should include a bidding strategy that is designed to support a single performance goal and is optimized for efficiency to increase return on investment.",
-					image: ""
+					image: "assets/img/icons/glass.svg"
 				},
 				{
 					min: 50,
@@ -531,7 +531,7 @@ var quiz_array = {
 					color_class: "yellow",
 					title: "Paid Search Program",
 					description: "You skipped this question! If you want to participate in a paid search program, ensure that your strategy provides a clear, consistent account and campaign structure that utilizes all relevant ad formats and extensions. It is very important that your program creatively tests and optimizes for specific devices. Your campaign should include a bidding strategy that is designed to support a single performance goal and is optimized for efficiency to increase return on investment.",
-					image: ""
+					image: "assets/img/icons/glass.svg"
 				},
 				{
 					min: 75,
@@ -539,7 +539,7 @@ var quiz_array = {
 					color_class: "green",
 					title: "Paid Search Program",
 					description: "You skipped this question! If you want to participate in a paid search program, ensure that your strategy provides a clear, consistent account and campaign structure that utilizes all relevant ad formats and extensions. It is very important that your program creatively tests and optimizes for specific devices. Your campaign should include a bidding strategy that is designed to support a single performance goal and is optimized for efficiency to increase return on investment.",
-					image: ""
+					image: "assets/img/icons/glass.svg"
 				}		
 			],
 			choices: [
@@ -1110,28 +1110,20 @@ function activatePDF(){
 				
 				
 			}, 100)
-        
-		
-		
-		
+
 	});
-	
-	
 	
 }
 
 function saveResults(){
 	///send email and name somewhere...
-    /*
     $.ajax({
         type: "POST",
-        url: "custom_script.php",
-        data: data,
+        url: "https://zapier.com/hooks/catch/1226981/2vao5q/",
+        data: quiz_array,
         success: function (res) {
-			
 			try
 			{
-			 	
 			}
 			catch(e)
 			{
@@ -1139,6 +1131,5 @@ function saveResults(){
 			} 
         }
     });
-    */
 }
 
